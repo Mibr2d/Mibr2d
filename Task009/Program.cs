@@ -6,6 +6,34 @@
 // 161 -> да
 
 
+// int InputInt(string message)
+// {
+//     Console.WriteLine(message);
+//     int number = Convert.ToInt32(Console.ReadLine());
+//     return number;
+// }
+// int firstNumber = InputInt("Введите число");
+// int number1=7;
+// int number2=23;
+// if (firstNumber % number1 == 0)
+// {
+//     Console.WriteLine("Число кратно 7");
+// }
+// else
+// {
+//     Console.WriteLine("Не кратно 7");
+// }
+// if (firstNumber % number2 == 0)
+// {
+//     Console.WriteLine("Число кратно 23");
+// }
+// else
+// {
+//     Console.WriteLine("Число не кратно 23");
+// }
+
+
+
 int InputInt(string message)
 {
     Console.WriteLine(message);
@@ -13,19 +41,13 @@ int InputInt(string message)
     return number;
 }
 int firstNumber = InputInt("Введите число");
-if (firstNumber%7==0)
+int divider1=7;
+int divider2=23;
+if (firstNumber % divider1 == 0 && firstNumber%divider2==0)
 {
-    Console.WriteLine("Число кратно 7");
+Console.WriteLine("да");
 }
 else
 {
-Console.WriteLine("Не кратно 7");
-}
-if(firstNumber%23==0)
-{
-Console.WriteLine("Число кратно 23");
-}
-else
-{
-    Console.WriteLine("Число не кратно 23");
+    Console.WriteLine("Нет");
 }
